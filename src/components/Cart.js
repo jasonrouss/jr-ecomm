@@ -1,0 +1,83 @@
+import { useDispatch, useSelector } from "react-redux";
+import {
+  decrementQuantity,
+  incrementQuantity,
+  removeFromCart,
+} from "../store/cartSlice";
+
+const Cart = () => {
+  const cartItems = useSelector((state) => state.cart.cartItems);
+
+  const dispatch = useDispatch();
+
+  const handleDecrementQuantity = (item) => {
+    dispatch(decrementQuantity(item));
+    console.log(item);
+  };
+
+  const handleIncrementQuantity = (item) => {
+    dispatch(incrementQuantity(item));
+  };
+
+  const handleRemoveFromCart = (item) => {
+    dispatch(removeFromCart(item));
+    console.log(item);
+  };
+
+  const getTotal = () => {
+    let total = 0;
+    cartItems.forEach((item) => {
+      total += item.price * item.quantity;
+    });
+    return total.toFixed(2);
+  };
+
+  return (
+    <div className="fixed top-4 right-4 z-50 bg-slate-100 border-2 border-slate-800 rounded-lg h-[500px] w-[280px] overflow-y-scroll">
+      <h1 className="text-3xl pl-2  font-semibold ">Cart</h1>
+      {cartItems.length === 0 ? (
+        <div className="p-2 ">Your cart is empty.</div>
+      ) : (
+        <div className="pl-2">
+          <ul>
+            {cartItems.map((item) => (
+              <li key={item.id}>
+                <div className="item-price flex ">
+                  <div className=" italic my-2 mr-8">{item.name} </div>
+                  <div className=" my-2">${item.price}</div>
+                </div>
+                <div className="flex justify-between gap-4 pb-3 border-b border-slate-800  mr-2">
+                  Quantity:
+                  <button
+                    className="border-2 border-slate-900 bg-blue-300 h-[27px] w-[27px] rounded-lg transition ease-in-out duration-200 transform hover:-translate-y-1 hover:scale-110"
+                    onClick={() => handleDecrementQuantity(item)}
+                    disabled={item.quantity <= 1}
+                  >
+                    -
+                  </button>
+                  {item.quantity}
+                  <button
+                    className="border-2 border-slate-900 bg-blue-500 h-[27px] w-[27px] rounded-lg transition ease-in-out duration-200 transform hover:-translate-y-1 hover:scale-110"
+                    onClick={() => handleIncrementQuantity(item)}
+                  >
+                    +
+                  </button>
+                  <br />
+                  <button
+                    className="border-2 border-slate-900 bg-red-500 mr-3 h-[27px] w-[27px] rounded-lg transition ease-in-out duration-200 transform hover:-translate-y-1 hover:scale-110"
+                    onClick={() => handleRemoveFromCart(item)}
+                  >
+                    X
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p className="my-2" >Total: ${getTotal()}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Cart;
