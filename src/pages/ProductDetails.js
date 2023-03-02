@@ -23,7 +23,7 @@ const ProductDetails = () => {
   return (
     <>
       <Header />
-      <div className=" bg-indigo-50 rounded-lg sm:m-20 m-4">
+      <div className=" bg-indigo-50 rounded-lg sm:m-20 m-1">
         <div className="flex justify-center    ">
           <div className="flex mt-10 lg:mx-4  ">
             <div className="card-img ">
