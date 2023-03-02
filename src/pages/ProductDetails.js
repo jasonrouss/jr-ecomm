@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
@@ -91,7 +92,9 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-     
+      <div className=" absolute inset-x-0 bottom-0  ">
+        <Footer />
+      </div>
     </>
   );
 };
