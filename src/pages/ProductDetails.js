@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
@@ -26,7 +25,7 @@ const ProductDetails = () => {
       <Header />
       <div className=" bg-indigo-50 rounded-lg sm:m-20 m-4">
         <div className="flex justify-center    ">
-          <div className="flex mt-10 mx-4  ">
+          <div className="flex mt-10 lg:mx-4  ">
             <div className="card-img ">
               <img
                 src={img}
@@ -54,7 +53,7 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="my-10  mx-4">
+          <div className="my-10  lg:mx-4">
             <div>
               <div className="flex    ">
                 <div className="border-2 rounded-t-lg rounded-r-none border-indigo-500  lg:w-[230px] w-[150px] px-4 py-2">
@@ -92,9 +91,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute inset-x-0 bottom-0  ">
-        <Footer />
-      </div>
+     
     </>
   );
 };
