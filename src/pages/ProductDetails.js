@@ -92,7 +92,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute inset-x-0 bottom-0  ">
+      <div className=" sm:absolute sm:inset-x-0 sm:bottom-0  mt-20 ">
         <Footer />
       </div>
     </>
