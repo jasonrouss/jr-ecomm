@@ -56,10 +56,10 @@ const ProductDetails = () => {
           <div className="my-10  lg:mx-4">
             <div>
               <div className="flex    ">
-                <div className="border-2 rounded-t-lg rounded-r-none border-indigo-500  lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-2 rounded-l-lg  rounded-b-none border-indigo-500  lg:w-[230px] w-[130px] px-4 py-2">
                   Weight:
                 </div>
-                <div className="border-r-2 border-t-2 border-b-2 rounded-l-none   rounded-t-lg border-indigo-500    lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-r-2 border-t-2 border-b-2 rounded-r-lg  rounded-b-none border-indigo-500    lg:w-[230px] w-[130px] px-4 py-2">
                   {weight}
                 </div>
               </div>
