@@ -5,7 +5,7 @@ const initialState = {
   products: products,
   filteredProducts: products,
 
-  selectedProduct: null,
+  selectedProductId: [],
   showSaleItems: false,
   minPrice: 0, // Add this property to track the minimum price
   maxPrice: 128, // Add this property to track the maximum price
@@ -15,9 +15,10 @@ export const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-    selectProduct: (state, action) => {
-      state.selectedProduct = action.payload;
-    },
+    selectedProductId: (state, action) => {
+      state.selectedProductId = action.payload;
+     
+    }, 
     toggleSale: (state, action) => {
       state.showSaleItems = action.payload;
 
@@ -50,13 +51,13 @@ export const productSlice = createSlice({
     },
     getValue: (state, action) => {
       const { minPrice, maxPrice } = action.payload;
-      state.minPrice = minPrice; 
-      state.maxPrice = maxPrice; 
+      state.minPrice = minPrice;
+      state.maxPrice = maxPrice;
     },
   },
 });
 
-export const { selectProduct, filterProducts, toggleSale, getValue } =
+export const { selectedProductId, filterProducts, toggleSale, getValue } =
   productSlice.actions;
 
 export default productSlice.reducer;

@@ -18,7 +18,6 @@ function Filter() {
   const toggleFilter = () => {
     setIsFilterOpen(!isFilterOpen);
   };
-console.log(isLargeScreen)
   const dispatch = useDispatch();
   const filteredProducts = useSelector(
     (state) => state.product.filteredProducts
@@ -28,7 +27,6 @@ console.log(isLargeScreen)
   const [priceRange, setPriceRange] = useState([PRICE_MIN, PRICE_MAX]);
 
   const handleChange = (value) => {
-    console.log(value);
     setPriceRange(value);
     dispatch(filterProducts({ minPrice: value[0], maxPrice: value[1] }));
     dispatch(getValue({ minPrice: value[0], maxPrice: value[1] }));

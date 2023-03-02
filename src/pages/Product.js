@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 
 import ProductCard from "../components/ProductCard";
 import Pagination from "../components/Pagination";
-
 const Product = () => {
+  
   const [currentPage, setCurrentPage] = useState(1);
   const searchTerm = useSelector((state) => state.search.searchTerm);
   const products = useSelector((state) => state.product.filteredProducts);
@@ -18,12 +18,11 @@ const Product = () => {
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
       )
     : products;
-
+   
   const currentProducts = filteredProducts.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
-  console.log(filteredProducts);
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
   const handlePageChange = (pageNumber) => {
@@ -34,7 +33,7 @@ const Product = () => {
     <div className="" >
       {currentProducts.length > 0 ? (
         <>
-          <div className="flex justify-center md:h-[1180px] xl:h-[840px] bg-indigo-50  rounded-xl  ">
+          <div className="flex justify-center md:h-[1180px] xl:h-[840px] bg-indigo-50 mx-1 rounded-xl  ">
             <div className="product-list grid  grid-cols-2 md:grid-cols-3 xl:grid-cols-4   mb-6 mx-4 lg:mx-10">
               {currentProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />

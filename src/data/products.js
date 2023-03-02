@@ -14,7 +14,7 @@ import keyboard from "./keyboard.jpg";
 
 import phone from "./phone.png";
 import shirt from "./shirt.jpg";
-import tyre from "./tyre.jpg"
+import tyre from "./tyre.jpg";
 const products = [
   {
     id: 1,
@@ -25,6 +25,10 @@ const products = [
     img: apple,
     date: "2023-02-15",
     onSale: "no",
+    weight: "1.41 lb",
+    dimension: "12 x 15 x 19 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.2",
   },
   {
     id: 2,
@@ -35,6 +39,10 @@ const products = [
     img: keyboard,
     date: "2023-02-15",
     onSale: "no",
+    weight: "2.41 lb",
+    dimension: "14 x 9 x 5 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.6",
   },
   {
     id: 3,
@@ -45,16 +53,24 @@ const products = [
     img: hat,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "2 lb",
+    dimension: "22 x 14 x 6 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.7",
   },
   {
     id: 4,
     name: "Sunglasses",
-    description: "Stylish black sunglasses.",
+    description: "Stylish fashion  black sunglasses.",
     price: 15.99,
     quantity: 1,
     img: glass,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "1.6 lb",
+    dimension: "8 x 8 x 8 in",
+    soldBy: " Jr Ecommerce",
+    rating: "3.9",
   },
   {
     id: 5,
@@ -65,16 +81,24 @@ const products = [
     img: headset,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "5 lb",
+    dimension: "18 x 25 x 39 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.4",
   },
   {
     id: 6,
     name: "Hoodie",
-    description: "Comfortable blue hoodie.",
+    description: "Comfortable sport blue hoodie.",
     price: 24.99,
     quantity: 1,
     img: hoodie,
     date: "2023-02-15",
     onSale: "no",
+    weight: "3.65 lb",
+    dimension: "7 x 9 x 4 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.1",
   },
   {
     id: 7,
@@ -85,16 +109,24 @@ const products = [
     img: monitor,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "4 lb",
+    dimension: "7 x 7 x 9 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.2",
   },
   {
     id: 8,
     name: "Mouse",
-    description: "Wired white work mouse.",
+    description: "Wired weighted  work mouse.",
     price: 31.99,
     quantity: 1,
     img: mouse,
     date: "2023-02-15",
     onSale: "no",
+    weight: "3.81 lb",
+    dimension: "4 x 8 x 15 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.4",
   },
   {
     id: 9,
@@ -105,6 +137,10 @@ const products = [
     img: mousepad,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "5.381 lb",
+    dimension: "22 x 8 x 8 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.8",
   },
   {
     id: 10,
@@ -115,6 +151,10 @@ const products = [
     img: phone,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "1.41 lb",
+    dimension: "17 x 5 x 14 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.5",
   },
   {
     id: 11,
@@ -125,6 +165,10 @@ const products = [
     img: shirt,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "3.78 lb",
+    dimension: "9 x 9 x 9 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.4",
   },
   {
     id: 12,
@@ -135,6 +179,10 @@ const products = [
     img: tyre,
     date: "2023-02-15",
     onSale: "no",
+    weight: "2.41 lb",
+    dimension: "7 x 7 x 7 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.5",
   },
   {
     id: 13,
@@ -145,7 +193,12 @@ const products = [
     img: necklace,
     date: "2023-02-15",
     onSale: "yes",
-  },{
+    weight: "1.41 lb",
+    dimension: "19 x 14 x 12 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.4",
+  },
+  {
     id: 14,
     name: "Flower",
     description: "White flower for your loved ones .",
@@ -154,8 +207,11 @@ const products = [
     img: flower,
     date: "2023-02-15",
     onSale: "yes",
+    weight: "1.27 lb",
+    dimension: "4 x 4 x 4 in",
+    soldBy: " Jr Ecommerce",
+    rating: "4.0",
   },
-  
 ];
 
 export default products;
