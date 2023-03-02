@@ -55,36 +55,36 @@ const ProductDetails = () => {
         </div>
         <div className="flex justify-center">
           <div className="my-10  lg:mx-4">
-            <div>
-              <div className="flex    ">
-                <div className="border-2 rounded-l-lg  rounded-b-none border-indigo-500  lg:w-[230px] w-[130px] px-4 py-2">
+            <div className="border-2 rounded-lg border-indigo-500">
+              <div className="flex   ">
+                <div className="border-b-2 border-r-2  border-indigo-500  lg:w-[230px] w-[130px] px-4 py-2">
                   Weight:
                 </div>
-                <div className="border-r-2 border-t-2 border-b-2 rounded-r-lg  rounded-b-none border-indigo-500    lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-b-2   border-indigo-500    lg:w-[230px] w-[130px] px-4 py-2">
                   {weight}
                 </div>
               </div>
               <div className="flex">
-                <div className="border-x-2 border-b-2 border-indigo-500   lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-b-2 border-r-2 border-indigo-500   lg:w-[230px] w-[130px] px-4 py-2">
                   Dimension:
                 </div>
-                <div className="border-r-2 border-b-2 border-indigo-500 lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-b-2  border-indigo-500 lg:w-[230px] w-[130px] px-4 py-2">
                   {dimension}
                 </div>
               </div>
               <div className="flex">
-                <div className="border-x-2  border-indigo-500   lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-b-2 border-r-2 border-indigo-500   lg:w-[230px] w-[130px] px-4 py-2">
                   Sold By:
                 </div>
-                <div className="border-r-2  border-indigo-500 lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-b-2  border-indigo-500 lg:w-[230px] w-[130px] px-4 py-2">
                   {soldBy}
                 </div>
               </div>
               <div className="flex">
-                <div className="border-2 border-indigo-500  rounded-l-lg rounded-t-none  lg:w-[230px] w-[130px] px-4 py-2">
+                <div className="border-r-2 border-indigo-500   lg:w-[230px] w-[130px] px-4 py-2">
                   Rating:
                 </div>
-                <div className="border-r-2 border-y-2 border-indigo-500 rounded-r-lg  rounded-t-none flex  lg:w-[230px] w-[130px] px-4 py-2">
+                <div className=" flex  lg:w-[230px] w-[130px] px-4 py-2">
                   {rating} <AiOutlineStar className="mt-1.5 ml-1" />
                 </div>
               </div>
