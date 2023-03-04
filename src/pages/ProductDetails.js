@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -9,18 +9,25 @@ import { GrFormAdd } from "react-icons/gr";
 import { AiOutlineStar } from "react-icons/ai";
 
 const ProductDetails = () => {
-  const selectedProductId = localStorage.getItem("selectedProduct");
-  const { price, img, name, description, weight, dimension, soldBy, rating } =
-    JSON.parse(selectedProductId);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const dispatch = useDispatch();
 
-  const handleAddToCart = () => {
-    const selectedProduct = JSON.parse(selectedProductId);
+  useEffect(() => {
+    const selectedProductId = localStorage.getItem("selectedProduct");
+    setSelectedProduct(JSON.parse(selectedProductId));
+  }, []);
 
+  const handleAddToCart = () => {
     dispatch(addItemToCart(selectedProduct));
-    toast.success(`${name} has been added to your cart.`);
+    toast.success(`${selectedProduct.name} has been added to your cart.`);
   };
 
+  if (!selectedProduct) {
+    return <div>Loading...</div>;
+  }
+
+  const { price, img, name, description, weight, dimension, soldBy, rating } =
+    selectedProduct;
   return (
     <>
       <Header />

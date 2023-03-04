@@ -60,8 +60,8 @@ const products = [
   },
   {
     id: 4,
-    name: "Sunglasses",
-    description: "Stylish fashion  black sunglasses.",
+    name: "Glasses",
+    description: "Stylish fashion  black glasses.",
     price: 15.99,
     quantity: 1,
     img: glass,
