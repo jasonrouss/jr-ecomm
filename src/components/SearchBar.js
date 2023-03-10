@@ -14,7 +14,7 @@ const SearchBar = () => {
   return (
     <input
           type="text"
-          className=" lg:w-[230px] w-[180px] px-4 py-2 m-2 leading-tight text-gray-700 bg-gray-50 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
+          className=" lg:w-[420px] w-[180px] lg:text-xl text-sm px-4 py-2 m-2 leading-tight text-gray-700 bg-gray-50 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white"
           placeholder="Search for products"
           
           onChange={handleSearchInputChange}
