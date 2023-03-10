@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Range slider styles */
 .range-slider {
   position: relative;
