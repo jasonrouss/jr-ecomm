@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="card ml-2  sm:mx-8 my-4 ">
       <div className="card-body  lg:h-[355px] lg:w-[200px]  sm:h-[313px] sm:w-[180px] h-[288px] w-[130px] border-2   border-indigo-900 bg-indigo-100  shadow-lg rounded-lg">
-        <Link to={`/products/${product.id}`}>
+        <Link onClick={handleProductClick} to={`/products/${product.id}`}>
           <img
             className="h-[120px] w-[130px] sm:h-[170px] sm:w-[180px] lg:h-[208px] lg:w-[200px] rounded-lg"
             src={img}
@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => {
           >
             {name}
           </Link>
-          <Link to={`/products/${product.id}`}>
+          <Link onClick={handleProductClick} to={`/products/${product.id}`}>
             <div className="name my-1 font-medium italic ">{description}</div>
           </Link>{" "}
           <div className="flex justify-between pt-1 ">

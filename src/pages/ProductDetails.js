@@ -31,7 +31,7 @@ const ProductDetails = () => {
   return (
     <>
       <Header />
-      <div className=" bg-indigo-50 rounded-lg sm:m-20 m-1">
+      <div className=" bg-indigo-50 rounded-lg m-20 ">
         <div className="flex justify-center    ">
           <div className="flex mt-10 lg:mx-4  ">
             <div className="card-img ">
@@ -99,7 +99,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <div className=" sm:absolute sm:inset-x-0 sm:bottom-0  mt-20 ">
+      <div className="   ">
         <Footer />
       </div>
     </>
