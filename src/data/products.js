@@ -19,7 +19,7 @@ const products = [
   {
     id: 1,
     name: "Apple",
-    description: "Nutritious tasty apple.",
+    description: "Nutritious and tasty apple.",
     price: 0.99,
     quantity: 1,
     img: apple,
