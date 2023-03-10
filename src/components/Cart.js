@@ -26,6 +26,13 @@ const Cart = () => {
     toast.error(`${item.name} has been removed from your cart.`);
   };
 
+ const checkoutClick = () => {
+  toast.success("Thank you for shopping with us");
+
+
+ }
+
+
   const getTotal = () => {
     let total = 0;
     cartItems.forEach((item) => {
@@ -75,7 +82,10 @@ const Cart = () => {
               </li>
             ))}
           </ul>
-          <p className="my-2">Total: ${getTotal()}</p>
+          <div className="flex justify-between">
+            <p className="my-2">Total: ${getTotal()}</p>
+            <button onClick={checkoutClick} className="m-1 p-1 bg-indigo-800 border-black rounded-lg text-white "> Checkout</button>
+          </div>
         </div>
       )}
     </div>
