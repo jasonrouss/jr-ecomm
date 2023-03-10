@@ -117,7 +117,7 @@ const products = [
   {
     id: 8,
     name: "Mouse",
-    description: "Wired weighted  work mouse.",
+    description: "Wired weighted   mouse.",
     price: 31.99,
     quantity: 1,
     img: mouse,
@@ -201,7 +201,7 @@ const products = [
   {
     id: 14,
     name: "Flower",
-    description: "White flower for your loved ones .",
+    description: "Flower for your loved ones .",
     price: 4.99,
     quantity: 1,
     img: flower,
