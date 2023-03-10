@@ -43,8 +43,8 @@ const ProductDetails = () => {
             </div>
             {/* Product Info */}
             <div className="card-info pl-3 bg-indigo-100 rounded-r-xl lg:w-[230px] w-[130px] h-[190px] lg:h-[250px] grid  content-between">
-              <div className="text-[26px] font-bold">{name}</div>
-              <div className="italic font-semibold">{description}</div>
+              <div className="lg:text-[26px] text-[18px] font-bold">{name}</div>
+              <div className="italic font-semibold text-[14px]">{description}</div>
               <div className="price add-to-cart flex justify-between p-2">
                 <div>${price}</div>
                 <div className="add-to-cart">
