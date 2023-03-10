@@ -19,7 +19,7 @@ const products = [
   {
     id: 1,
     name: "Apple",
-    description: "Nutritious and delicious apple.",
+    description: "Nutritious tasty apple.",
     price: 0.99,
     quantity: 1,
     img: apple,
@@ -61,7 +61,7 @@ const products = [
   {
     id: 4,
     name: "Glasses",
-    description: "Stylish fashion  black glasses.",
+    description: "Stylish fashion glasses.",
     price: 15.99,
     quantity: 1,
     img: glass,
